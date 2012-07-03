@@ -6,10 +6,8 @@ Bubble Game is a simple game created with Silverlight for Windows Phone 7. The g
 
 2. Detailed summary
 
-• They appear randomly different objects (shapes) on the screen that will
-growing in size (at least 4 sizes)
-• The user touches the object before it reaches the size
-maximum
+• They appear randomly different objects (shapes) on the screen that will growing in size (at least 4 sizes)
+• The user touches the object before it reaches the sizemaximum
 • Has a score
 • Stores rating score (TOP 3)
 • The user starts with 3 lives
