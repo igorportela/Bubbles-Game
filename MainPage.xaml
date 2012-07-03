@@ -1,0 +1,40 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Projeto_WP7___Igor_Amorim_C.Portela.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <controls:Pivot Title="Bubbles" Name="pivotGame">
+        <controls:PivotItem Name="main_screen" Header="Menu">
+            <StackPanel Margin="0 140">
+                <Button Name="btnPlay" Click="btnPlay_Click" Height="81" Width="211">Jogar</Button>
+                <Button Name="btnRanking" Click="btnRanking_Click" Height="86" Width="206">Ver ranking</Button>
+            </StackPanel>
+        </controls:PivotItem>
+
+        <controls:PivotItem Name="game_screen" Header="Jogo">
+            <StackPanel>
+                <TextBlock Name="Nivel" Text="{Binding nivel}"/>
+                <TextBlock Name="Pointing" Text="{Binding pointing}"/>
+                <TextBlock Name="Lifes" Text="{Binding lifes}"/>
+                <Canvas Name="contentPanel" Height="580" Margin="10"></Canvas>
+            </StackPanel>
+        </controls:PivotItem>
+
+        <controls:PivotItem Name="ranking_screen" Header="Ranking">
+            <ListBox Name="lstRanking">
+            </ListBox>
+        </controls:PivotItem>
+    </controls:Pivot>
+
+</phone:PhoneApplicationPage>

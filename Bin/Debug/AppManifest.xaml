@@ -1,0 +1,8 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="Projeto_WP7___Igor_Amorim_C.Portela" EntryPointType="Projeto_WP7___Igor_Amorim_C.Portela.App" RuntimeVersion="4.7.50308.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="Projeto_WP7___Igor_Amorim_C.Portela" Source="Projeto_WP7___Igor_Amorim_C.Portela.dll" />
+    <AssemblyPart x:Name="Microsoft.Expression.Controls" Source="Microsoft.Expression.Controls.dll" />
+    <AssemblyPart x:Name="Microsoft.Phone.Controls" Source="Microsoft.Phone.Controls.dll" />
+    <AssemblyPart x:Name="Microsoft.Expression.Drawing" Source="Microsoft.Expression.Drawing.dll" />
+  </Deployment.Parts>
+</Deployment>
