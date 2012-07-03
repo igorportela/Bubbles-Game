@@ -1,4 +1,4 @@
- game
+# Bubbles Game
 
 1. About
 
